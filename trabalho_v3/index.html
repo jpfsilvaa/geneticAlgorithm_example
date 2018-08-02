@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="geneticAlgorithm.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Algoritmo genético - Decodificação de mensagem</h1>
+            <label>Frase a ser decodificada: </label>
+            <input type="text" id="phrase" />
+            <br />
+            <div id="details">
+                <br />
+                <br />
+                <h3 id="generation">Geração: </h3>
+                <h3 id="pred_rate">Taxa de predação (%):
+                    <input id="pred_input" type="number" min="1" max="50" value="50"/>
+                </h3>
+                <h3 id="mut_rate">Taxa de mutação (%):
+                    <input id="mut_input" type="number" min="1" max="100" value="40"/>
+                </h3>
+                <h3 id="pop">População:
+                    <input id="pop_input" type="number" min="2" max="1000" value="100" step="2"/>
+                </h3>
+                <button onclick="start()">INICIAR</button>
+                <button onclick="stopProccess()">PARAR</button>
+				<h6>Autor: João Paulo F. Silva</h6>
+                <br />
+            </div>
+            <div id="algorithm">
+                <br />
+                <h2 id="best">Melhor frase: </h2>
+                <ul id="population"></ul>
+            </div>
+        </div>
+    </body>
+</html>

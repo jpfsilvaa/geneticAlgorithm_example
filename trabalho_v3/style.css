@@ -1,0 +1,23 @@
+div {
+    font-weight: normal;
+    font-family:Lucida Console, Helvetica, sans-serif;
+}
+
+#details {
+    position: relative;
+    width: 500px;
+    float: left;
+}
+
+#algorithm {
+    position: relative;
+    float: left;
+}
+
+span {
+    font-weight: lighter;
+}
+
+#phrase {
+    width: 400px
+}
